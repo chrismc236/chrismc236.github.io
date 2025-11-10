@@ -56,48 +56,74 @@
         <div class="container">
             <h2 class="text-center mb-5">Projects</h2>
             <div class="row g-4">
-                <!-- Project Card -->
+                <!-- Project Card Example -->
                 <div class="col-md-4">
                     <div class="card h-100 shadow-sm">
                         <img src="images/project1.png" class="card-img-top" alt="Project 1">
                         <div class="card-body">
                             <h5 class="card-title">Project One</h5>
-                            <p class="card-text">A short description of project one. Include tech used and purpose.</p>
+                            <p class="card-text">Short description of project one.</p>
                         </div>
                         <div class="card-footer">
-                            <a href="#" class="btn btn-outline-primary btn-sm">View Code</a>
+                            <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#project1Modal">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
-                <!-- Project Card -->
+
+                <!-- Add more cards as needed -->
                 <div class="col-md-4">
                     <div class="card h-100 shadow-sm">
                         <img src="images/project2.png" class="card-img-top" alt="Project 2">
                         <div class="card-body">
                             <h5 class="card-title">Project Two</h5>
-                            <p class="card-text">A short description of project two. Include tech used and purpose.</p>
+                            <p class="card-text">Short description of project two.</p>
                         </div>
                         <div class="card-footer">
-                            <a href="#" class="btn btn-outline-primary btn-sm">View Code</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Project Card -->
-                <div class="col-md-4">
-                    <div class="card h-100 shadow-sm">
-                        <img src="images/project3.png" class="card-img-top" alt="Project 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Project Three</h5>
-                            <p class="card-text">A short description of project three. Include tech used and purpose.</p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="#" class="btn btn-outline-primary btn-sm">View Code</a>
+                            <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#project2Modal">
+                                View Details
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Project 1 Modal -->
+    <div class="modal fade" id="project1Modal" tabindex="-1" aria-labelledby="project1ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="project1ModalLabel">Project One</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/project1.png" class="img-fluid mb-3" alt="Project 1 Screenshot">
+                    <p>Detailed description of Project One. Explain the problem it solves, tech stack, and any special features.</p>
+                    <a href="#" class="btn btn-primary" target="_blank">View Code on GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project 2 Modal -->
+    <div class="modal fade" id="project2Modal" tabindex="-1" aria-labelledby="project2ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="project2ModalLabel">Project Two</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/project2.png" class="img-fluid mb-3" alt="Project 2 Screenshot">
+                    <p>Detailed description of Project Two. Include features, challenges, and tech stack.</p>
+                    <a href="#" class="btn btn-primary" target="_blank">View Code on GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Contact Section -->
     <section id="contact" class="py-5 bg-light">
