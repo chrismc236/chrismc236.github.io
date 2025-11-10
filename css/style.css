@@ -1,28 +1,143 @@
-/* Custom Styles */
-
+/* --- General Styles --- */
 body {
     font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+    line-height: 1.6;
 }
 
-h2 {
+/* --- Headings --- */
+h1, h2, h3, h4, h5 {
     font-weight: 700;
 }
 
+/* --- Navbar --- */
 .navbar-brand {
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 }
 
+.nav-link {
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #0d6efd !important; /* Bootstrap primary */
+}
+
+/* --- Hero Section --- */
 header {
     background: url('../images/hero-bg.jpg') no-repeat center center;
     background-size: cover;
+    color: white;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+header p {
+    font-size: 1.3rem;
+}
+
+/* --- About Section --- */
+#about p {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* --- Project Cards --- */
+.card {
+    border: none;
+    border-radius: 0.75rem;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    transition: all 0.3s ease-in-out;
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
 }
 
+/* Card Image */
+.card-img-top {
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+    transition: transform 0.3s ease;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+/* Card Footer Button */
+.card-footer .btn {
+    width: 100%;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card-footer .btn:hover {
+    background-color: #0d6efd;
+    color: #fff;
+}
+
+/* --- Modals --- */
+.modal-content {
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-title {
+    font-weight: 700;
+}
+
+.modal-body img {
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.modal-body p {
+    font-size: 1rem;
+    color: #444;
+}
+
+.modal-body a.btn {
+    margin-top: 10px;
+}
+
+/* --- Contact Section --- */
+#contact form input,
+#contact form textarea {
+    border-radius: 0.5rem;
+}
+
+#contact form button {
+    border-radius: 0.5rem;
+    font-weight: 600;
+}
+
+/* --- Footer --- */
 footer {
     font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+/* --- Responsive Tweaks --- */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
 }
