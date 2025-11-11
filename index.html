@@ -56,16 +56,16 @@
         <div class="container">
             <h2 class="text-center mb-5">Projects</h2>
             <div class="row g-4">
-                <!-- Project Card Example -->
                 <div class="col-md-4">
                     <div class="card h-100 shadow-sm">
-                        <img src="images/project1.png" class="card-img-top" alt="Autoscale Project">
+                        
                         <div class="card-body">
-                            <h5 class="card-title">Project One</h5>
-                            <p class="card-text">Short description of project one.</p>
+                            <h5 class="card-title">Appointment Booking Service</h5>
+                            <p class="card-text">I was part of a group of five software students who were tasked with providing a base layout with simple functionalities for the company to work on and finalise. 
+Over the course of three months, we were able to create a locally hosted full-stack application using Java, SQL and basic webpage foundations. It streamlined the appointment booking service by allowing customers to book appointments that suited them without having to directly contact busy garage employees.</p>
                         </div>
                         <div class="card-footer">
-                            <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#project1Modal">
+                            <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#autoscaleModal">
                                 View Details
                             </button>
                         </div>
@@ -75,23 +75,44 @@
                 <!-- Add more cards as needed -->
                 <div class="col-md-4">
                     <div class="card h-100 shadow-sm">
-                        <img src="images/project2.png" class="card-img-top" alt="Project 2">
                         <div class="card-body">
-                            <h5 class="card-title">Project Two</h5>
-                            <p class="card-text">Short description of project two.</p>
+                            <h5 class="card-title">Simple MVC Java Client Server Application</h5>
+                            <p class="card-text">A desktop application built using the Model-View-Controller architecture with Java RMI for remote communication.
+                            The project implements serialization and deserialization to persist data between sessions, ensuring functionality even when the server is offline.</p>
                         </div>
                         <div class="card-footer">
-                            <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#project2Modal">
+                            <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#mvcProjectModal">
                                 View Details
                             </button>
                         </div>
                     </div>
                 </div>
+
+                <!-- Project 3 Card -->
+                <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    
+                    <div class="card-body">
+                    <h5 class="card-title">Pokémon JDBC Application</h5>
+                    <p class="card-text">
+                        A Java desktop application that uses JDBC to manage and display Pokémon data.  
+                        Implements a Model-View-Controller (MVC) design and allows persistent data storage via serialization.
+                    </p>
+                    </div>
+
+                    <div class="card-footer">
+                    <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#project3Modal">
+                        View Details
+                    </button>
+                    </div>
+                </div>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <!-- AutoScale Project Modal -->
+   <!-- AutoScale Project Modal -->
     <div class="modal fade" id="autoscaleModal" tabindex="-1" aria-labelledby="autoscaleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
@@ -100,17 +121,16 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
+                    <!-- Canva Embed (Clean version) -->
                     <div class="ratio ratio-16x9 mb-3">
-                        <!-- 🔹 Replace this URL with your Canva embed link -->
-                        <iframe src="<div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
- padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
- border-radius: 8px; will-change: transform;">
-  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-    src="https://www.canva.com/design/DAG4acbshGw/m00Nm4jbXT7YGZvqbk6rTQ/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
-  </iframe>
-</div>
-<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAG4acbshGw&#x2F;m00Nm4jbXT7YGZvqbk6rTQ&#x2F;view?utm_content=DAG4acbshGw&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">AutoScale Project</a> by Chris McCarthy" allowfullscreen></iframe>
+                        <iframe 
+                            loading="lazy" 
+                            style="border: none;" 
+                            src="https://www.canva.com/design/DAG4acbshGw/m00Nm4jbXT7YGZvqbk6rTQ/view?embed" 
+                            allowfullscreen>
+                        </iframe>
                     </div>
+
                     <p>
                         <strong>Overview:</strong> AutoScale is a full-stack web application that allows customers to book garage appointments dynamically based on available dates and times.  
                         It uses Java Servlets, MySQL, and a responsive front-end built with HTML, CSS, and Bootstrap.
@@ -121,28 +141,90 @@
                     <p>
                         <strong>Tech Stack:</strong> Java • MySQL • Apache Tomcat • HTML • CSS • Bootstrap • JavaScript
                     </p>
-                    <a href="https://github.com/ChrisMcCarthy-A00310267/AutoScale" class="btn btn-primary" target="_blank">View Code on GitHub</a>
+
+                    <a href="https://github.com/ChrisMcCarthy-A00310267/AutoScale" class="btn btn-primary" target="_blank">
+                        View Code on GitHub
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Project 2 Modal -->
-    <div class="modal fade" id="project2Modal" tabindex="-1" aria-labelledby="project2ModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="project2ModalLabel">Project Two</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <img src="images/project2.png" class="img-fluid mb-3" alt="Project 2 Screenshot">
-                    <p>Detailed description of Project Two. Include features, challenges, and tech stack.</p>
-                    <a href="#" class="btn btn-primary" target="_blank">View Code on GitHub</a>
-                </div>
+
+    <!-- MVC Project Modal -->
+    <div class="modal fade" id="mvcProjectModal" tabindex="-1" aria-labelledby="mvcProjectModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="mvcProjectModalLabel">Java MVC Application</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+            <div class="ratio ratio-16x9 mb-3">
+            <iframe 
+                src="https://www.youtube.com/embed/LdIaxEbyyec" 
+                title="MVC App Demo" 
+                allowfullscreen
+                loading="lazy">
+            </iframe>
             </div>
+
+            <p><strong>Overview:</strong> This project demonstrates a Model-View-Controller (MVC) architecture built entirely in Java. 
+            It separates business logic, user interface, and data handling to promote scalability and maintainability.</p>
+
+            <p><strong>My Role:</strong> I designed the controller logic that mediates user input, updates the model, and refreshes the GUI dynamically. 
+            The project includes validation, event handling, and modular JavaFX UI updates.</p>
+
+            <p><strong>Tech Stack:</strong> Java • JavaFX/Swing • MVC Pattern • OOP Principles</p>
+
+            <a href="https://github.com/ChrisMcCarthy-A00310267/MVC-Project" 
+            class="btn btn-primary" target="_blank">
+            View Code on GitHub
+            </a>
+        </div>
         </div>
     </div>
+    </div>
+
+    <!-- Project 3 Modal -->
+    <div class="modal fade" id="project3Modal" tabindex="-1" aria-labelledby="project3ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="project3ModalLabel">Pokémon JDBC Application</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <!-- Optional Screenshot or Demo -->
+            <div class="ratio ratio-16x9 mb-3">
+            <iframe 
+                src="https://www.youtube.com/embed/q6BsfKesQdI" 
+                title="JDBC App Demo" 
+                allowfullscreen
+                loading="lazy">
+            </iframe>
+            </div>
+
+            <p><strong>Overview:</strong>  
+            This project is a Java desktop application that manages Pokémon data using **JDBC** to communicate with a relational database.  
+            It demonstrates **Model-View-Controller (MVC)** architecture for a clean separation of logic, presentation, and data.  
+            Users can view, add, and update Pokémon information, with all data persisted to the database and serialized for offline access.</p>
+
+            <p><strong>My Role:</strong>  
+            I implemented the **MVC structure**, handled **database integration using JDBC**, and developed the **serialization/deserialization logic** to maintain persistent data between sessions.  
+            I also worked on creating an intuitive interface for easy navigation and Pokémon management.</p>
+
+            <p><strong>Tech Stack:</strong> Java • JDBC • MySQL • MVC Pattern • Serialization & Deserialization • OOP Principles</p>
+
+            <a href="https://github.com/ChrisMcCarthy-A00310267/PokemonJDBC" class="btn btn-primary" target="_blank">
+            View Code on GitHub
+            </a>
+        </div>
+        </div>
+    </div>
+    </div>
+
 
     <!-- Contact Section -->
     <section id="contact" class="py-5 bg-light">
@@ -150,25 +232,71 @@
             <h2 class="text-center mb-4">Contact Me</h2>
             <div class="row justify-content-center">
                 <div class="col-md-6">
-                    <form>
+
+                    <!-- Alerts -->
+                    <div id="form-success" class="alert alert-success d-none" role="alert">
+                        Your message has been sent successfully!
+                    </div>
+                    <div id="form-error" class="alert alert-danger d-none" role="alert">
+                        Oops! Something went wrong. Please try again later.
+                    </div>
+
+                    <!-- Formspree Form -->
+                    <form id="contact-form" action="https://formspree.io/f/xrbrgovg" method="POST">
                         <div class="mb-3">
                             <label for="name" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Your name">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Your name" required>
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="your.email@example.com">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="your.email@example.com" required>
                         </div>
                         <div class="mb-3">
                             <label for="message" class="form-label">Message</label>
-                            <textarea class="form-control" id="message" rows="4" placeholder="Your message"></textarea>
+                            <textarea class="form-control" id="message" name="message" rows="4" placeholder="Your message" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary w-100">Send Message</button>
                     </form>
+
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Optional JS for Alerts -->
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const form = document.getElementById("contact-form");
+        const successAlert = document.getElementById("form-success");
+        const errorAlert = document.getElementById("form-error");
+
+        form.addEventListener("submit", function(e) {
+            e.preventDefault(); // prevent default form submission
+
+            const data = new FormData(form);
+            fetch(form.action, {
+                method: "POST",
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    successAlert.classList.remove("d-none");
+                    errorAlert.classList.add("d-none");
+                    form.reset();
+                } else {
+                    successAlert.classList.add("d-none");
+                    errorAlert.classList.remove("d-none");
+                }
+            }).catch(() => {
+                successAlert.classList.add("d-none");
+                errorAlert.classList.remove("d-none");
+            });
+        });
+    });
+    </script>
+
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
