@@ -59,7 +59,7 @@
                 <!-- Project Card Example -->
                 <div class="col-md-4">
                     <div class="card h-100 shadow-sm">
-                        <img src="images/project1.png" class="card-img-top" alt="Project 1">
+                        <img src="images/project1.png" class="card-img-top" alt="Autoscale Project">
                         <div class="card-body">
                             <h5 class="card-title">Project One</h5>
                             <p class="card-text">Short description of project one.</p>
@@ -91,18 +91,30 @@
         </div>
     </section>
 
-    <!-- Project 1 Modal -->
-    <div class="modal fade" id="project1Modal" tabindex="-1" aria-labelledby="project1ModalLabel" aria-hidden="true">
+    <!-- AutoScale Project Modal -->
+    <div class="modal fade" id="autoscaleModal" tabindex="-1" aria-labelledby="autoscaleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="project1ModalLabel">Project One</h5>
+                    <h5 class="modal-title" id="autoscaleModalLabel">AutoScale Project</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <img src="images/project1.png" class="img-fluid mb-3" alt="Project 1 Screenshot">
-                    <p>Detailed description of Project One. Explain the problem it solves, tech stack, and any special features.</p>
-                    <a href="#" class="btn btn-primary" target="_blank">View Code on GitHub</a>
+                    <div class="ratio ratio-16x9 mb-3">
+                        <!-- 🔹 Replace this URL with your Canva embed link -->
+                        <iframe src="https://www.canva.com/design/YourDesignID/view?embed" allowfullscreen></iframe>
+                    </div>
+                    <p>
+                        <strong>Overview:</strong> AutoScale is a full-stack web application that allows customers to book garage appointments dynamically based on available dates and times.  
+                        It uses Java Servlets, MySQL, and a responsive front-end built with HTML, CSS, and Bootstrap.
+                    </p>
+                    <p>
+                        <strong>My Role:</strong> I implemented the servlet logic that connects the booking form to the SQL database, dynamically retrieves available time slots, and confirms appointments through REST endpoints.
+                    </p>
+                    <p>
+                        <strong>Tech Stack:</strong> Java • MySQL • Apache Tomcat • HTML • CSS • Bootstrap • JavaScript
+                    </p>
+                    <a href="https://github.com/ChrisMcCarthy-A00310267/AutoScale" class="btn btn-primary" target="_blank">View Code on GitHub</a>
                 </div>
             </div>
         </div>
